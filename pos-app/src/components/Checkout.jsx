@@ -130,7 +130,6 @@ const Checkout = ({ cartItems, clearCart, fetchProducts }) => {
   return (
     <div className="checkout">
       <h2>Ödeme</h2>
-      {/* <p>Toplam Tutar: {total.toFixed(2)} ₺</p> */}
 
       <div className="payment-methods">
         <div style={{ display: "flex" }}>

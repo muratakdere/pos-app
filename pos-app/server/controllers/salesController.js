@@ -1,4 +1,4 @@
-const db = require("./db");
+const db = require("../config/db");
 
 exports.getAllSales = async (req, res) => {
   try {
@@ -16,7 +16,14 @@ exports.getAllSales = async (req, res) => {
 };
 
 exports.createSale = async (req, res) => {
-  const { product_id, amount, total, payment_method, cash_amount, card_amount } = req.body;
+  const {
+    product_id,
+    amount,
+    total,
+    payment_method,
+    cash_amount,
+    card_amount,
+  } = req.body;
   console.log("Satış isteği geldi:", req.body);
   try {
     const [products] = await db.query("SELECT * FROM products WHERE id = ?", [
@@ -49,7 +56,7 @@ exports.createSale = async (req, res) => {
       total,
       payment_method,
       cash_amount,
-      card_amount
+      card_amount,
     });
   } catch (err) {
     res.status(500).json({ error: err.message });

@@ -50,7 +50,7 @@ const Reports = () => {
 
   const handleCloseDay = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/close-day");
+      const res = await axios.post("http://localhost:5000/api/reports/close-day");
       toast.success(
         `Gün Sonu Kaydedildi! Toplam Satış: ${
           res.data.total_sales
