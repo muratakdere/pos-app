@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.product-item {
+  border: 1px solid #d1d9e6;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(209, 217, 230, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(53, 122, 189, 0.3);
+}
+
+.cart {
+  border: 1px solid #d1d9e6;
+  padding: 1rem;
+  width: 360px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(53, 122, 189, 0.15);
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.checkout {
+  width: 350px; /* veya */
+  max-width: 500px; /* Maksimum genişlik sınırı */
+
+  padding: 20px;
+  border: 1px solid #d1d9e6;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(53, 122, 189, 0.15);
+  align-self: flex-start; /* Üstte hizalama için */
+}

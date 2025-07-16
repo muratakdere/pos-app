@@ -1,0 +1,23 @@
+.sales-page {
+  padding: 20px;
+}
+
+.sales-page h2 {
+  margin-bottom: 20px;
+}
+
+.sales-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sales-page th,
+.sales-page td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.sales-page th {
+  background-color: #f5f5f5;
+}
